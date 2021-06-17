@@ -143,9 +143,9 @@ body{
         
     }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:420px){
     .job-container p{
-        font-size: 1.3rem;
+        font-size: 1rem;
         
     }
 }
@@ -188,7 +188,7 @@ body{
     transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
     transition: all 0.4s;
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:420px){
     .menu_item-img{
         height: 40vh;
     }
@@ -283,7 +283,7 @@ body{
         font-size: 36px;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 420px){
     .socials .socials-container a{
         font-size: 1.3rem;
     }
