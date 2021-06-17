@@ -280,11 +280,11 @@ body{
 }
 @media screen and (max-width: 900px){
     .socials .socials-container a{
-        font-size: 36px;
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 420px){
     .socials .socials-container a{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
