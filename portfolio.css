@@ -268,7 +268,6 @@ body{
 
 }
 .socials .socials-container{
-    display: flex;
     justify-content: space-between;
 }
 .git-url{
@@ -284,11 +283,11 @@ body{
 }
 @media screen and (max-width: 900px){
     .socials .socials-container a{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 @media screen and (max-width: 420px){
     .socials .socials-container a{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
