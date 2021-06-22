@@ -192,6 +192,10 @@ body{
     .menu_item-img{
         height: 40vh;
     }
+    .menu_item-link:hover + .menu_item-img{
+        opacity: 0;
+        transform: none;
+    }
     
 }
 .menu{
