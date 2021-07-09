@@ -30,6 +30,7 @@ body{
     padding: 1.6vw 0 0 0;
     margin: 4px;
 }
+
 .navbar .navbar-container{
     display: flex;
     padding: 12px 0;
@@ -49,35 +50,39 @@ body{
 .header .header-container h1{
     font-size: 10rem;
 }
-
+.hero-image{
+    width: 100%;
+    margin-top: -300px;
+}
 @media screen and (max-width: 900px){
     .header .header-container h1{
         font-size:4.5rem;
     }
 }
-.hero-image{
-    width: 100%;
-    margin-top: -300px;
-}
+
 .hero-image:after{
     content:"";
     display: table;
     clear: both;
 }
 .hero-image .hero-image-container{
-    width: 40%;
+    width:300px;
+    height: 300px;
     float: right;
+   
 }
 .hero-image .hero-image-container img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 @media screen and (max-width: 900px){
     .hero-image{
         margin-top: 40px;
+        
     }
-    .hero-image .hero-image-container{
-        width: 100%;
-    }
+    
 }
 .section-header .section-header-container{
     display: flex;
@@ -119,7 +124,7 @@ body{
 .job{
     margin: 40px 0;
     display: flex;
-    justify-content: space-between;
+    
 }
 .job-container p{
     font-size: 27px;
@@ -151,27 +156,43 @@ body{
 }
 /* descrip */
 .work-container{
-    display: flex;
-    max-width: 1370px;
-    margin: 70px auto;
+    display: none;
+    margin: 75px auto;
+    width: 95%;
     align-items: center;
-    justify-content: space-around;
-    border: rgb(148, 55, 55) 5px solid ;
-    padding: 30px 50px;
+    justify-content: space-between;
+    
 }
 .work-descrip{
-    font-size: 27px;
+    font-size: 36px;
     display: grid;
     gap: 5rem;
     width: 50%;
+    border:4px solid #ffffff ;
+    padding: 40px;
 }
-
-
+.image-container{
+    display: none;
+}
+.phone{
+    max-height: 500px;
+    margin-right: 10px;
+}
+.interface{
+    max-height: 250px;
+}
+.dm{
+    max-height: 400px;
+}
 .work-image{
-    position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr 2fr;
+gap: 0;
+max-width: 100%;
+
 }
 .work-image img{
-    max-height: 600px;
+    max-height: 200px;
 }
 .card{
     background:#000000;
@@ -196,9 +217,6 @@ body{
         display: grid;
         gap: 3rem;
         width: 100%;  
-    }
-    .work-descrip p{
-        margin-bottom: 30px;
     }
     .card{
         display: none;
@@ -272,6 +290,7 @@ body{
     font-size: 7vw;
 }
 .marquee{
+    z-index: 1;
     position: absolute;
     top: 20%;
     left: 0;
@@ -297,7 +316,7 @@ body{
 .menu_item-link,
 .marquee span{
     white-space: nowrap;
-    font-size: 9vw;
+    font-size: 8vw;
     padding: 0 1.2vw;
     font-weight: 900;
     line-height: 1.20;
@@ -320,6 +339,19 @@ body{
 .myskill .myskill-container p{
     font-size: 80px;
     line-height:100px;
+}
+/* mywork */
+.mywork{
+    position: relative;
+    padding: 0 0 5vh 0;
+}
+.mywork-item{
+    z-index: 2;
+    background: none;
+    border: none;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke:0px;
 }
 @media screen and (max-width: 900px){
     .myskill .myskill-container p{
@@ -348,6 +380,7 @@ body{
     text-decoration: none;
     font-size: 64px;
 }
+
 @media screen and (max-width: 900px){
     .socials .socials-container a{
         font-size: 1.3rem;
@@ -356,5 +389,39 @@ body{
 @media screen and (max-width: 420px){
     .socials .socials-container a{
         font-size: 1.3rem;
+    }
+    .hero-image .hero-image-container{
+        float: unset;
+        margin:  0 auto;
+        
+       
+    }
+    .work-descrip{
+        padding: 20px;
+    }
+    .mywork{
+        padding:  0 0 2vh 0;
+    }
+}
+.show-text .work-container{
+    display: flex;
+}
+.show-text .image-container{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+@media screen and (max-width:1100px){
+    .show-text .image-container{
+        display: flex;
+        justify-content: center;
+        margin: 10vh auto;
+        
+    }
+    .phone{
+        max-height: 300px;
+    }
+    .work-container{
+        margin: 30px auto 0 auto;
     }
 }
